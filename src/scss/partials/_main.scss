@@ -3,13 +3,10 @@ body {
     color: $font_color;
 }
 
-.page-wrapper {
+.head {
     max-width: $width_generale;
     @include centratura;
-}
-
-.head {
-    width: 100%;
+    @include bordo_separatore;
     height: 75px;
     font-size: $font_small_size;
     font-weight: $font_bold;
@@ -37,7 +34,7 @@ body {
 }
 
 .jumbo {
-    @extend .page-wrapper;
+    max-width: $width_generale;
     @include margini(100px, auto);
     @include my-flex(space-between, center);
 
@@ -50,7 +47,6 @@ body {
 }
 
 .section-jumbo {
-
     float: left;
     max-width: $width_intermedia;
     @include my-flex(space-between, flex-start);
@@ -76,6 +72,49 @@ body {
 
         p {
             @include margini (auto, 15px);
+        }
+    }
+}
+
+.central {
+    padding: 30px 0;
+    background-color: #ffe7d2;
+
+    .titolo {
+        max-width: $width_header;
+        @include centratura;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .description {
+        @extend .titolo;
+        max-width: $width_generale2;
+        @include my-flex(center, center);
+        .figura {
+            width: 32%;
+            @include my-flex(center, center);
+            flex-direction: column;
+        }
+
+    }
+
+    .separatore {
+        max-width: $width_generale2;
+        @include centratura;
+        @include bordo_separatore;
+    }
+
+    img {
+        height: 110px;
+        object-fit: contain;
+    }
+
+    .figura-centro {
+        @extend .description;
+        img {
+            height: 300px;
         }
     }
 }

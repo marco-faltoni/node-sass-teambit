@@ -374,14 +374,10 @@ body {
   color: #58402c;
 }
 
-.page-wrapper,
-.jumbo {
+.head {
   max-width: 1150px;
   margin: 0 auto;
-}
-
-.head {
-  width: 100%;
+  border-bottom: 0.5px solid #bdb5af;
   height: 75px;
   font-size: 14px;
   font-weight: 600;
@@ -419,6 +415,7 @@ body {
 }
 
 .jumbo {
+  max-width: 1150px;
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
@@ -472,5 +469,53 @@ body {
 
 .section-jumbo .buttons p {
   margin: auto 15px;
+}
+
+.central {
+  padding: 30px 0;
+  background-color: #ffe7d2;
+}
+
+.central .titolo,
+.central .description,
+.central .figura-centro {
+  max-width: 628px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.central .description,
+.central .figura-centro {
+  max-width: 860px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central .description .figura,
+.central .figura-centro .figura {
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.central .separatore {
+  max-width: 860px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid #bdb5af;
+}
+
+.central img {
+  height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.central .figura-centro img {
+  height: 300px;
 }
 
