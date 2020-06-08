@@ -1,0 +1,80 @@
+body {
+    font-family: $font_family;
+    color: $font_color;
+}
+
+.page-wrapper {
+    max-width: $width_generale;
+    @include centratura;
+}
+
+.head {
+    width: 100%;
+    height: 75px;
+    font-size: $font_small_size;
+    font-weight: $font_bold;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        width: 10%;
+    }
+
+    .menu {
+        @include my-flex(flex-end, center);
+        list-style-type: none;
+        width: 90%;
+
+        li {
+            display: inline-block;
+            padding-left: 50px;
+
+            button {
+                @include bottone_bianco;
+            }
+        }
+    }
+}
+
+.jumbo {
+    @extend .page-wrapper;
+    @include margini(100px, auto);
+
+    .section-jumbo {
+        float: left;
+        max-width: $width_intermedia;
+        @include my-flex(space-between, flex-start);
+        flex-direction: column;
+    }
+
+    .figura {
+        float: right;
+        img {
+            max-width: $width_intermedia;
+        }
+    }
+}
+
+.section-jumbo {
+    .text {
+        h1 {
+            font-size: $font_size_jumbo;
+            font-weight: $font_bold;
+        }
+        h3 {
+            font-size: $font_middle_size_jumbo;
+        }
+    }
+
+    .buttons {
+        @include my-flex(flex-start, center);
+
+        button {
+            @include bottoni_blu;
+        }
+
+        p {
+            @include margini (auto, 15px);
+        }
+    }
+}

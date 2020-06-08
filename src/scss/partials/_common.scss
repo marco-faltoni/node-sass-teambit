@@ -4,12 +4,22 @@
     align-items: $align;
 }
 
+@mixin centratura {
+    margin: 0 auto;
+}
+
+@mixin margini($verticali, $laterali) {
+    margin: $verticali $laterali;
+}
+
 @mixin bottoni_blu {
     line-height: 35px;
     padding: 0 20px;
     color: #fff;
     font-size: $font_small_size;
+    font-weight: $font_bold;
     background: $colore_sfondo_bottoni;
+    border: none;
     border-radius: 7px;
 }
 
@@ -18,6 +28,8 @@
     padding: 0 20px;
     color: $colore_sfondo_bottoni;
     font-size: $font_small_size;
+    font-weight: $font_bold;
     background: #fff;
+    border: 1px solid $colore_sfondo_bottoni;
     border-radius: 7px;
 }
