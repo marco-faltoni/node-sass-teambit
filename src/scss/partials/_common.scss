@@ -1,0 +1,23 @@
+@mixin my-flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin bottoni_blu {
+    line-height: 35px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: $font_small_size;
+    background: $colore_sfondo_bottoni;
+    border-radius: 7px;
+}
+
+@mixin bottone_bianco {
+    line-height: 35px;
+    padding: 0 20px;
+    color: $colore_sfondo_bottoni;
+    font-size: $font_small_size;
+    background: #fff;
+    border-radius: 7px;
+}
