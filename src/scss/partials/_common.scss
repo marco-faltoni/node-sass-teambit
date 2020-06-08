@@ -21,6 +21,7 @@
     background: $colore_sfondo_bottoni;
     border: none;
     border-radius: 7px;
+    cursor:pointer;
 }
 
 @mixin bottone_bianco {
@@ -32,4 +33,5 @@
     background: #fff;
     border: 1px solid $colore_sfondo_bottoni;
     border-radius: 7px;
+    cursor:pointer;
 }

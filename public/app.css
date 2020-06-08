@@ -415,19 +415,14 @@ body {
   background: #fff;
   border: 1px solid #30488f;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .jumbo {
   margin: 100px auto;
-}
-
-.jumbo .section-jumbo {
-  float: left;
-  max-width: 520px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
 }
 
 .jumbo .figura {
@@ -438,6 +433,15 @@ body {
   max-width: 520px;
 }
 
+.section-jumbo {
+  float: left;
+  max-width: 520px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .section-jumbo .text h1 {
   font-size: 50px;
   font-weight: 600;
@@ -445,6 +449,7 @@ body {
 
 .section-jumbo .text h3 {
   font-size: 22px;
+  font-weight: 400;
 }
 
 .section-jumbo .buttons {
@@ -462,6 +467,7 @@ body {
   background: #30488f;
   border: none;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .section-jumbo .buttons p {

@@ -39,13 +39,7 @@ body {
 .jumbo {
     @extend .page-wrapper;
     @include margini(100px, auto);
-
-    .section-jumbo {
-        float: left;
-        max-width: $width_intermedia;
-        @include my-flex(space-between, flex-start);
-        flex-direction: column;
-    }
+    @include my-flex(space-between, center);
 
     .figura {
         float: right;
@@ -56,6 +50,12 @@ body {
 }
 
 .section-jumbo {
+
+    float: left;
+    max-width: $width_intermedia;
+    @include my-flex(space-between, flex-start);
+    flex-direction: column;
+
     .text {
         h1 {
             font-size: $font_size_jumbo;
@@ -63,6 +63,7 @@ body {
         }
         h3 {
             font-size: $font_middle_size_jumbo;
+            font-weight: 400;
         }
     }
 
