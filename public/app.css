@@ -374,6 +374,8 @@ body {
   color: #58402c;
 }
 
+/*** INIZIO HEADER ***/
+
 .head {
   max-width: 1150px;
   margin: 0 auto;
@@ -413,6 +415,10 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
+
+/*** FINE HEADER ***/
+
+/*** INIZIO JUMBOTRON ***/
 
 .jumbo {
   max-width: 1150px;
@@ -471,6 +477,10 @@ body {
   margin: auto 15px;
 }
 
+/*** FINE JUMBOTRON ***/
+
+/*** INIZIO PRIMA SEZIONE COLORATA ***/
+
 .central {
   padding: 30px 0;
   background-color: #ffe7d2;
@@ -519,9 +529,12 @@ body {
   height: 300px;
 }
 
+/*** FINE PRIMA SEZIONE COLORATA ***/
+
+/*** INIZIO SEZIONE IMMAGINI ***/
+
 .left,
 .right {
-  margin: 80px 400px;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -532,6 +545,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin: 80px 300px;
 }
 
 .left .cont .fig img,
@@ -597,4 +611,6 @@ body {
   justify-content: flex-end;
   align-items: baseline;
 }
+
+/*** FINE SEZIONE IMMAGINI ***/
 
