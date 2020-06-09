@@ -657,6 +657,22 @@ body {
   font-weight: 400;
 }
 
+.left .cont .testo .titolo h3:last-child,
+.left .cont .testo .due h3:last-child,
+.right .cont .testo .titolo h3:last-child,
+.right .cont .testo .due h3:last-child,
+.left .cont .testo .central .description h3:last-child,
+.right .cont .testo .central .description h3:last-child,
+.central .left .cont .testo .description h3:last-child,
+.central .right .cont .testo .description h3:last-child,
+.left .cont .testo .central .figura-centro h3:last-child,
+.right .cont .testo .central .figura-centro h3:last-child,
+.central .left .cont .testo .figura-centro h3:last-child,
+.central .right .cont .testo .figura-centro h3:last-child {
+  color: #263972;
+  cursor: pointer;
+}
+
 .left .cont .testo img,
 .right .cont .testo img {
   text-align: center;
@@ -814,7 +830,7 @@ footer .info .menu .first-voice {
   padding-bottom: 30px;
 }
 
-footer .info .menu li {
+footer .info .menu li:not(.first-voice) {
   padding-bottom: 20px;
   font-size: 14px;
   cursor: pointer;
@@ -822,8 +838,17 @@ footer .info .menu li {
   transition-timing-function: ease-in;
 }
 
-footer .info .menu li:hover {
+footer .info .menu li:not(.first-voice):hover {
   color: #30488F;
+}
+
+footer .info .Blog .first-voice {
+  padding-bottom: 21px;
+}
+
+footer .info .Blog li:not(.first-voice) {
+  line-height: 2.4;
+  padding-bottom: 5px;
 }
 
 /*** FINE FOOTER ***/

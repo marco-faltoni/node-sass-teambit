@@ -189,6 +189,11 @@ body {
                     font-size: $font_middle_size_jumbo;
                     font-weight: 400;
                 }
+
+                h3:last-child {
+                    color: $text_color_link;
+                    cursor: pointer;
+                }
             }
 
             img {
@@ -311,14 +316,23 @@ footer {
                 font-size: $font_middle_size;
                 padding-bottom: 30px;
             }
-            li {
+            li:not(.first-voice){
                 padding-bottom: 20px;
                 font-size: $font_small_size;
                 cursor: pointer;
                 @include animation_hover;
             }
-            li:hover {
+            li:not(.first-voice):hover {
                 color: $font_color_hover;
+            }
+        }
+        .Blog {
+            .first-voice {
+                padding-bottom: 21px;
+            }
+            li:not(.first-voice){
+                line-height: 2.4;
+                padding-bottom: 5px;
             }
         }
     }
