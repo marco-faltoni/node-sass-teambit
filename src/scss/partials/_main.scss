@@ -48,6 +48,19 @@ body {
             color: #fff;
             background-color: $colore_sfondo_bottoni_hover;
         }
+        .solution {
+            position: relative;
+        }
+        .solution:hover .sottomenu{
+            display: block;
+        }
+        .sottomenu {
+            @include sottomenu;
+
+            li {
+                @include padding(10px, 20px);
+            }
+        }
     }
 }
 /*** FINE HEADER ***/
