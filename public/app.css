@@ -496,7 +496,7 @@ body {
 
 .central .description .figura,
 .central .figura-centro .figura {
-  width: 32%;
+  width: calc(100% / 3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,5 +517,84 @@ body {
 
 .central .figura-centro img {
   height: 300px;
+}
+
+.left,
+.right {
+  margin: 80px 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.left .cont,
+.right .cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left .cont .fig img,
+.right .cont .fig img {
+  max-width: 768px;
+  float: right;
+}
+
+.left .cont .testo,
+.right .cont .testo {
+  max-width: 420px;
+  padding-left: 20px;
+}
+
+.left .cont .testo .titolo,
+.right .cont .testo .titolo,
+.left .cont .testo .central .description,
+.right .cont .testo .central .description,
+.central .left .cont .testo .description,
+.central .right .cont .testo .description,
+.left .cont .testo .central .figura-centro,
+.right .cont .testo .central .figura-centro,
+.central .left .cont .testo .figura-centro,
+.central .right .cont .testo .figura-centro {
+  margin-bottom: 100px;
+}
+
+.left .cont .testo .titolo h1,
+.right .cont .testo .titolo h1,
+.left .cont .testo .central .description h1,
+.right .cont .testo .central .description h1,
+.central .left .cont .testo .description h1,
+.central .right .cont .testo .description h1,
+.left .cont .testo .central .figura-centro h1,
+.right .cont .testo .central .figura-centro h1,
+.central .left .cont .testo .figura-centro h1,
+.central .right .cont .testo .figura-centro h1 {
+  font-size: 26px;
+}
+
+.left .cont .testo .titolo h3,
+.right .cont .testo .titolo h3,
+.left .cont .testo .central .description h3,
+.right .cont .testo .central .description h3,
+.central .left .cont .testo .description h3,
+.central .right .cont .testo .description h3,
+.left .cont .testo .central .figura-centro h3,
+.right .cont .testo .central .figura-centro h3,
+.central .left .cont .testo .figura-centro h3,
+.central .right .cont .testo .figura-centro h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.left .cont .testo img,
+.right .cont .testo img {
+  text-align: center;
+  max-width: 270px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
 }
 

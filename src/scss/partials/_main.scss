@@ -93,7 +93,7 @@ body {
         max-width: $width_generale2;
         @include my-flex(center, center);
         .figura {
-            width: 32%;
+            width: calc(100% / 3);
             @include my-flex(center, center);
             flex-direction: column;
         }
@@ -117,4 +117,47 @@ body {
             height: 300px;
         }
     }
+}
+
+.left {
+    @include margini(80px, 400px);
+    @include my-flex(flex-start, baseline);
+
+    .cont {
+        @include my-flex(flex-start, flex-start);
+
+        .fig img {
+            max-width: $width_immagini_descrzione_grandi;
+            float: right;
+        }
+        .testo {
+            max-width: 420px;
+            padding-left: 20px;
+
+            .titolo {
+                margin-bottom: 100px;
+
+                h1 {
+                    font-size: $font_big_size;
+                }
+
+                h3 {
+                    font-size: $font_middle_size_jumbo;
+                    font-weight: 400;
+                }
+            }
+
+            img {
+                text-align: center;
+                max-width: $width_immagini_descrzione_piccole;
+            }
+        }
+
+    }
+
+}
+
+.right {
+    @extend .left;
+    @include my-flex(flex-end, baseline);
 }
