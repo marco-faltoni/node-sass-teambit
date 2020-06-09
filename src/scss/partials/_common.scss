@@ -43,3 +43,23 @@
 @mixin padding ($sopra, $lati) {
     padding: $sopra $lati;
 }
+
+@mixin icona_chat {
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $text_color_link;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+@mixin animation_hover {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+}

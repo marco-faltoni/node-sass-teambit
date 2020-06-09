@@ -406,6 +406,9 @@ body {
 .head .menu li {
   display: inline-block;
   padding-left: 50px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }
 
 .head .menu li button {
@@ -418,6 +421,17 @@ body {
   border: 1px solid #30488f;
   border-radius: 7px;
   cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.head .menu li:hover {
+  color: #30488F;
+}
+
+.head .menu li > button:hover {
+  color: #fff;
+  background-color: #233569;
 }
 
 /*** FINE HEADER ***/
@@ -479,12 +493,30 @@ body {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.section-jumbo .buttons button:hover,
+.section-jumbo .due .small-text button:hover,
+.due .section-jumbo .small-text button:hover {
+  background-color: #233569;
 }
 
 .section-jumbo .buttons p,
 .section-jumbo .due .small-text p,
 .due .section-jumbo .small-text p {
   margin: auto 15px;
+}
+
+.section-jumbo .small-text > p {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.section-jumbo .small-text > p:hover {
+  color: #30488F;
 }
 
 /*** FINE JUMBOTRON ***/
@@ -712,11 +744,28 @@ body {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.due .buttons button:hover,
+.due .small-text button:hover {
+  background-color: #233569;
 }
 
 .due .buttons p,
 .due .small-text p {
   margin: auto 15px;
+}
+
+.due .small-text {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+}
+
+.due .small-text > p:hover {
+  color: #30488F;
 }
 
 /*** FINE SEZIONE COLORATA 2 ***/
@@ -763,13 +812,18 @@ footer .info .menu .first-voice {
   font-weight: 600;
   font-size: 18px;
   padding-bottom: 30px;
-  cursor: pointer;
 }
 
 footer .info .menu li {
   padding-bottom: 20px;
   font-size: 14px;
   cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+footer .info .menu li:hover {
+  color: #30488F;
 }
 
 /*** FINE FOOTER ***/
