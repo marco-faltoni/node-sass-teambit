@@ -455,13 +455,17 @@ body {
   font-weight: 400;
 }
 
-.section-jumbo .buttons {
+.section-jumbo .buttons,
+.section-jumbo .due .small-text,
+.due .section-jumbo .small-text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.section-jumbo .buttons button {
+.section-jumbo .buttons button,
+.section-jumbo .due .small-text button,
+.due .section-jumbo .small-text button {
   line-height: 35px;
   padding: 0 20px;
   color: #fff;
@@ -473,7 +477,9 @@ body {
   cursor: pointer;
 }
 
-.section-jumbo .buttons p {
+.section-jumbo .buttons p,
+.section-jumbo .due .small-text p,
+.due .section-jumbo .small-text p {
   margin: auto 15px;
 }
 
@@ -487,12 +493,13 @@ body {
 }
 
 .central .titolo,
+.central .due,
 .central .description,
 .central .figura-centro {
   max-width: 628px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-top: 20px;
 }
 
@@ -561,7 +568,9 @@ body {
 }
 
 .left .cont .testo .titolo,
+.left .cont .testo .due,
 .right .cont .testo .titolo,
+.right .cont .testo .due,
 .left .cont .testo .central .description,
 .right .cont .testo .central .description,
 .central .left .cont .testo .description,
@@ -574,7 +583,9 @@ body {
 }
 
 .left .cont .testo .titolo h1,
+.left .cont .testo .due h1,
 .right .cont .testo .titolo h1,
+.right .cont .testo .due h1,
 .left .cont .testo .central .description h1,
 .right .cont .testo .central .description h1,
 .central .left .cont .testo .description h1,
@@ -587,7 +598,9 @@ body {
 }
 
 .left .cont .testo .titolo h3,
+.left .cont .testo .due h3,
 .right .cont .testo .titolo h3,
+.right .cont .testo .due h3,
 .left .cont .testo .central .description h3,
 .right .cont .testo .central .description h3,
 .central .left .cont .testo .description h3,
@@ -613,4 +626,66 @@ body {
 }
 
 /*** FINE SEZIONE IMMAGINI ***/
+
+/*** INIZIO SEZIONE COLORATA 2 ***/
+
+.due .text-area {
+  position: relative;
+  max-width: 628px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 0.5px solid #bdb5af;
+  margin: 20px auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.due .text-area .founders {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.due .text-area .founders img {
+  max-width: 40px;
+  max-height: 40px;
+  padding-right: 10px;
+}
+
+.due .text-area .founders .quotes small {
+  display: block;
+}
+
+.due .buttons,
+.due .small-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.due .buttons button,
+.due .small-text button {
+  line-height: 35px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background: #30488f;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.due .buttons p,
+.due .small-text p {
+  margin: auto 15px;
+}
+
+/*** FINE SEZIONE COLORATA 2 ***/
+
+/*** INZIO FOOTER ***/
 

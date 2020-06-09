@@ -90,7 +90,7 @@ body {
         max-width: $width_header;
         @include centratura;
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         padding-top: 20px;
     }
 
@@ -161,7 +161,6 @@ body {
                 max-width: $width_immagini_descrzione_piccole;
             }
         }
-
     }
 
 }
@@ -171,3 +170,62 @@ body {
     @include my-flex(flex-end, baseline);
 }
 /*** FINE SEZIONE IMMAGINI ***/
+
+/*** INIZIO SEZIONE COLORATA 2 ***/
+.due {
+    @extend .titolo;
+
+    .text-area {
+        position: relative;
+        max-width: $width_header;
+        background-color: #fff;
+        border-radius: 7px;
+        border: 0.5px solid #bdb5af;
+        @include margini(20px, auto);
+        @include padding(20px, 40px);
+        @include my-flex(flex-start, flex-start);
+        flex-direction: column;
+        .founders {
+            @include my-flex(flex-start, center);
+
+            img {
+                max-width: 40px;
+                max-height: 40px;
+                padding-right: 10px;
+            }
+            .quotes small{
+                display: block;
+            }
+        }
+    }
+
+    // .text-area::after {
+    //     display: block;
+    //     background-image: url('img/quote.svg');
+    //     width: 37px;
+    //     height: 39px;
+    //     position: absolute;
+    //     top: -23px;
+    //     left: -1px;
+    // }
+
+    .buttons {
+        @include my-flex(center, center);
+        @include padding(20px, 0);
+
+        button {
+            @include bottoni_blu;
+        }
+
+        p {
+            @include margini (auto, 15px);
+        }
+    }
+
+    .small-text {
+        @extend .buttons;
+    }
+}
+/*** FINE SEZIONE COLORATA 2 ***/
+
+/*** INZIO FOOTER ***/
