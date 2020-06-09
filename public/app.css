@@ -374,6 +374,10 @@ body {
   color: #58402c;
 }
 
+.page-wrapper {
+  position: relative;
+}
+
 /*** INIZIO HEADER ***/
 
 .head {
@@ -559,6 +563,7 @@ body {
 .left .cont .fig,
 .right .cont .fig {
   width: 52%;
+  padding-left: 25px;
 }
 
 .left .cont .fig img,
@@ -586,7 +591,7 @@ body {
 .central .left .cont .testo .figura-centro,
 .central .right .cont .testo .figura-centro {
   max-width: 420px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .left .cont .testo .titolo h1,
@@ -636,14 +641,11 @@ body {
   float: left;
 }
 
-.right .cont .testo .titolo,
-.right .cont .testo .due,
-.right .cont .testo .central .description,
-.central .right .cont .testo .description,
-.right .cont .testo .central .figura-centro,
-.central .right .cont .testo .figura-centro,
-.right .cont .testo img {
-  float: right;
+.right .cont .testo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 /*** FINE SEZIONE IMMAGINI ***/
@@ -680,6 +682,17 @@ body {
   display: block;
 }
 
+.due .text-area::after {
+  content: "";
+  display: block;
+  background-image: url(/images/quote.svg?a6c807e96fb4e8f212ba8aa7fe641214);
+  width: 37px;
+  height: 39px;
+  position: absolute;
+  top: -23px;
+  left: -1px;
+}
+
 .due .buttons,
 .due .small-text {
   display: flex;
@@ -709,4 +722,76 @@ body {
 /*** FINE SEZIONE COLORATA 2 ***/
 
 /*** INZIO FOOTER ***/
+
+footer {
+  max-width: 1150px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+footer .help {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 370px;
+}
+
+footer .help img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+footer .help p {
+  font-weight: 600;
+}
+
+footer .info {
+  float: left;
+  width: calc(100% - 370px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .info .menu {
+  list-style-type: none;
+  width: calc(100% / 5);
+}
+
+footer .info .menu .first-voice {
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+footer .info .menu li {
+  padding-bottom: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/*** FINE FOOTER ***/
+
+.chat-icona {
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #263972;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+.chat-icona i {
+  font-size: 26px;
+  right: 17px;
+  position: absolute;
+  top: 19px;
+  color: #fff;
+}
 
