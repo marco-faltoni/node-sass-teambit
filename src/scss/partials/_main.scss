@@ -52,7 +52,7 @@ body {
             position: relative;
         }
         .solution:hover .sottomenu{
-            display: block;
+            opacity: 1
         }
         .sottomenu {
             @include sottomenu;
