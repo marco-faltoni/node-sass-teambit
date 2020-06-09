@@ -552,7 +552,13 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 80px 300px;
+  margin: 80px 0px;
+  width: 100%;
+}
+
+.left .cont .fig,
+.right .cont .fig {
+  width: 52%;
 }
 
 .left .cont .fig img,
@@ -563,7 +569,7 @@ body {
 
 .left .cont .testo,
 .right .cont .testo {
-  max-width: 420px;
+  width: 48%;
   padding-left: 20px;
 }
 
@@ -579,6 +585,7 @@ body {
 .right .cont .testo .central .figura-centro,
 .central .left .cont .testo .figura-centro,
 .central .right .cont .testo .figura-centro {
+  max-width: 420px;
   margin-bottom: 100px;
 }
 
@@ -623,6 +630,20 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+}
+
+.right .cont .fig img {
+  float: left;
+}
+
+.right .cont .testo .titolo,
+.right .cont .testo .due,
+.right .cont .testo .central .description,
+.central .right .cont .testo .description,
+.right .cont .testo .central .figura-centro,
+.central .right .cont .testo .figura-centro,
+.right .cont .testo img {
+  float: right;
 }
 
 /*** FINE SEZIONE IMMAGINI ***/

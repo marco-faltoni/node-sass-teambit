@@ -133,17 +133,22 @@ body {
 
     .cont {
         @include my-flex(flex-start, flex-start);
-        @include margini(80px, 300px);
+        @include margini(80px, 0px);
+        width: 100%;
 
-        .fig img {
-            max-width: $width_immagini_descrzione_grandi;
-            float: right;
+        .fig {
+            width: 52%;
+            img {
+               max-width: $width_immagini_descrzione_grandi;
+               float: right;
+           }
         }
         .testo {
-            max-width: 420px;
+            width: 48%;
             padding-left: 20px;
 
             .titolo {
+                max-width: 420px;
                 margin-bottom: 100px;
 
                 h1 {
@@ -168,6 +173,12 @@ body {
 .right {
     @extend .left;
     @include my-flex(flex-end, baseline);
+    .cont .fig img {
+        float: left;
+    }
+    .cont .testo .titolo, .cont .testo img {
+        float: right;
+    }
 }
 /*** FINE SEZIONE IMMAGINI ***/
 
